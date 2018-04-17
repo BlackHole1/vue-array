@@ -1,0 +1,26 @@
+{
+  "name": "vue-array",
+  "version": "1.0.0",
+  "description": "Array object operation under Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackHole1/vue-array.git"
+  },
+  "keywords": [
+    "vue",
+    "array"
+  ],
+  "author": "Black-Hole <158blackhole@gmail.com> (http://bugs.cc/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlackHole1/vue-array/issues"
+  },
+  "homepage": "https://github.com/BlackHole1/vue-array#readme",
+  "devDependencies": {
+    "mocha": "^5.1.0"
+  }
+}
