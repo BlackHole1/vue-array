@@ -42,5 +42,3 @@ module.exports = {
   },
   $array: arr => new array(arr)
 }
-
-// module.exports.default = 
