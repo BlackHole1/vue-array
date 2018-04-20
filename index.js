@@ -1,9 +1,10 @@
 let remove = require('./lib/remove')
+let replace = require('./lib/replace')
 let {isArray, isArrOrArg, isObject} = require('./utils')
 
 const array = function (arr) {
   if (!isArray(arr)) {
-    throw new Error(`The instance parameter must be an array`)
+    throw new Error('The instance parameter must be an array')
   }
 
   this.arr = arr
@@ -11,10 +12,14 @@ const array = function (arr) {
   this.removeOpt = {
     arr2: []
   }
+  this.replaceOpt = {
+    arr2: []
+  }
 }
 
 const methods = {
-  remove
+  remove,
+  replace
 }
 
 let keys = Object.keys(methods)
@@ -26,6 +31,13 @@ while (i--) {
       this.removeOpt.arr2 = (parameters.length > 1)
       ? parameters
       : isObject(parameters[0]) ? [parameters[0]] : parameters[0]
+    }
+
+    if (key === 'replace') {
+      if (!isArray(this.replaceOpt.arr2)) {
+        throw Error('The replace parameter must be an array')
+      }
+      this.replaceOpt.arr2 = parameters[0]
     }
 
     methods[key].apply(this)
