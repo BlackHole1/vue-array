@@ -1,26 +1,26 @@
 # Vue-Array [![npm](https://img.shields.io/npm/dy/vue-array.svg)](https://www.npmjs.com/package/vue-array) [![npm](https://img.shields.io/github/issues/BlackHole1/vue-array.svg)](https://github.com/BlackHole1/all-equal) [![npm](https://img.shields.io/github/forks/BlackHole1/vue-array.svg)](https://github.com/BlackHole1/all-equal) [![npm](https://img.shields.io/github/stars/BlackHole1/vue-array.svg)](https://github.com/BlackHole1/all-equal) [![npm](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/BlackHole1/all-equal)
 
-[中文文档](https://github.com/BlackHole1/vue-array/blob/master/README-zh.md)
+[English documents](https://github.com/BlackHole1/vue-array/blob/master/README.md)
 
-> Use this package to manipulate the array. Vue can monitor the changes in the array
+> 使用此package来操作数组。vue是可以监听到数组中的更改的
 
-## install
+## 安装
 
 ```bash
-# Install with npm
+# npm安装
 $ npm install vue-array --save
 
-# Install with yarn
+# yarn安装
 $ yarn add vue-array
 ```
 
-## Usage
+## 使用
 
-### Vue Plug-in
+### vue插件
 
 demo: [https://codesandbox.io/s/jppo9w6yyw](https://codesandbox.io/s/jppo9w6yyw)
 
-### Ordinary
+### 普通方法
 
 ```javascript
 let vueArray = require('../').$array
@@ -33,7 +33,7 @@ vueArray(arr).replace([4, 5, 6])
 console.log(arr) // => [4, 5, 6]
 ```
 
-### Instance
+### 注入方法
 
 ```javascript
 let arrInstance = Array
@@ -51,9 +51,9 @@ console.log(arr) // => [4, 5, 6]
 
 ### remove
 
-> Support numbers, strings, Boolean, Null Undefined NaN, Object, Array, ±0
+> 支持 numbers, strings, Boolean, Null Undefined NaN, Object, Array, ±0
 
-> If it is an object, an array, support recursive judgment
+> 如果是对象、数组，会进行递归操作
 
 ```javascript
 let arr = [
@@ -95,22 +95,22 @@ vueArray(arr).replace(['a', 'b', 'c'])
 console.log(arr) // => ['a', 'b', 'c']
 ```
 
-## Running tests
+## 运行测试
 
-Install dev dependencies:
+安装dev依赖关系:
 
 ``` bash
-$ npm test
+$ npm i -D && npm test
 ```
 
-## Contributing
+## 贡献
 
 
-| **Commits** | **Contributor** | 
+| **次数** | **贡献者** | 
 | --- | --- |
 | 7 | [Black-Hole](https://github.com/BlackHole1) |
 
-## Author
+## 作者
 
 **Black-Hole**
 
