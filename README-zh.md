@@ -1,4 +1,10 @@
-# Vue-Array [![npm](https://img.shields.io/npm/dy/vue-array.svg)](https://www.npmjs.com/package/vue-array) [![npm](https://img.shields.io/github/issues/BlackHole1/vue-array.svg)](https://github.com/BlackHole1/all-equal) [![npm](https://img.shields.io/github/forks/BlackHole1/vue-array.svg)](https://github.com/BlackHole1/all-equal) [![npm](https://img.shields.io/github/stars/BlackHole1/vue-array.svg)](https://github.com/BlackHole1/all-equal) [![npm](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/BlackHole1/all-equal)
+# Vue-Array 
+[![Node Version](https://img.shields.io/badge/node.js-%3E=_6-green.svg)](https://travis-ci.org/BlackHole1/vue-array)
+[![Build Status](https://travis-ci.org/BlackHole1/vue-array.svg?branch=master)](https://travis-ci.org/BlackHole1/vue-array)
+[![Coverage Status](https://coveralls.io/repos/github/BlackHole1/vue-array/badge.svg?branch=master)](https://coveralls.io/github/BlackHole1/vue-array?branch=master)
+[![Npm Downlaod](https://img.shields.io/npm/dy/vue-array.svg)](https://www.npmjs.com/package/vue-array)
+
+[![NPM](https://nodei.co/npm/vue-array.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue-array/)
 
 [English documents](https://github.com/BlackHole1/vue-array/blob/master/README.md)
 

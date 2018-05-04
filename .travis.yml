@@ -1,0 +1,16 @@
+sudo: false
+os:
+  - linux
+  - osx
+language: node_js
+install: npm install
+script: npm test
+after_script: npm run coverage
+env:
+  global:
+    - NODE_ENV=travis 
+node_js:
+  - node
+  - '8'
+  - '7'
+  - '6'
