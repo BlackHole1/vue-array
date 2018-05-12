@@ -28,6 +28,7 @@ while (i--) {
   const key = keys[i]
   array.prototype[key] = function(...parameters) {
     if (key === 'remove') {
+      // if parameter is Object, convert Array format
       this.removeOpt.arr2 = (parameters.length > 1)
       ? parameters
       : isObject(parameters[0]) ? [parameters[0]] : parameters[0]
@@ -41,15 +42,17 @@ while (i--) {
     }
 
     methods[key].apply(this)
+
+    // chained mode
     return this
   }
 }
 
 module.exports = {
-  install: function (vue) {
+  install: vue => {
     vue.prototype.$array = arr => new array(arr)
   },
-  injection: function (instance) {
+  injection: instance => {
     instance.prototype.$array = arr => new array(arr)
   },
   $array: arr => new array(arr)

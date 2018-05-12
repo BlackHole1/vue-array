@@ -29,14 +29,14 @@ demo: [https://codesandbox.io/s/jppo9w6yyw](https://codesandbox.io/s/jppo9w6yyw)
 ### 普通方法
 
 ```javascript
-let vueArray = require('../').$array
+let vueArray = require('vue-array').$array
 
-let arr = [1, 2, 3]
-vueArray(arr).remove([2])
-console.log(arr) // => [1, 3]
+let arr = [1, 2, 3, -0 , 0]
+vueArray(arr).remove([2, 1]).remove(0)
+console.log(arr) // => [3, -0]
 
-vueArray(arr).replace([4, 5, 6])
-console.log(arr) // => [4, 5, 6]
+vueArray(arr).replace([4, 5, 6]).replace(['a', 'b', 'c'])
+console.log(arr) // => ['a', 'b', 'c']
 ```
 
 ### 注入方法
