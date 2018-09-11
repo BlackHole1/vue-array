@@ -8,7 +8,9 @@
 
 [English documents](https://github.com/BlackHole1/vue-array/blob/master/README.md)
 
-> 使用此package来操作数组。vue是可以监听到数组中的更改的
+使用此package来操作数组。vue是可以监听到数组中的更改的
+
+> 如果可以，可以使用`Vue.set`方法
 
 ## 安装
 

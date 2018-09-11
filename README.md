@@ -8,7 +8,9 @@
 
 [中文文档](https://github.com/BlackHole1/vue-array/blob/master/README-zh.md)
 
-> Use this package to manipulate the array. Vue can monitor the changes in the array
+Use this package to manipulate the array. Vue can monitor the changes in the array
+
+> If you can, you can use the `Vue.set` method.
 
 ## install
 
